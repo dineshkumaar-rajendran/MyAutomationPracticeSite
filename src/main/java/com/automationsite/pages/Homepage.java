@@ -3,6 +3,7 @@ package com.automationsite.pages;
 import java.util.Properties;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -16,6 +17,7 @@ public class Homepage extends Baseclass {
 	}
 
 	@FindBy(xpath = "//*[@placeholder='Search']")
+	@CacheLookup
 	WebElement SearchTxtBox;
 
 	@FindBy(xpath = "//*[@name='submit_search']")
@@ -25,6 +27,7 @@ public class Homepage extends Baseclass {
 	WebElement ResultHeader;
 
 	@FindBy(xpath = "//a[@class='login']")
+	@CacheLookup
 	WebElement SiginBtn;
 
 	@FindBy(xpath = "//a[@title='Women']")

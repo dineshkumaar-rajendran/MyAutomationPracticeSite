@@ -76,7 +76,7 @@ public class HomepageTest extends Baseclass {
 		}
 		homepage.NavigatetoSignPage();
 		String Pagetitle = homepage.getPageTitle();
-		Assert.assertEquals(Pagetitle,"Login - My Store");
+		Assert.assertEquals(Pagetitle,"Login - y Store");
 	}
 
 	@AfterClass

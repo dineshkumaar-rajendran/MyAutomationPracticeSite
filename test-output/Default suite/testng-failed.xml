@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automation.testcases.LoginPageTest">
+      <class name="com.automation.testcases.HomepageTest">
         <methods>
-          <include name="setup"/>
-          <include name="VerifyLoginPagetitle"/>
-          <include name="LogontoAccount"/>
+          <include name="SuccessfullSubmitNewsletter"/>
           <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="EnterSigninPage"/>
         </methods>
-      </class> <!-- com.automation.testcases.LoginPageTest -->
+      </class> <!-- com.automation.testcases.HomepageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
