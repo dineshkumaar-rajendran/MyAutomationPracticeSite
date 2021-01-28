@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-18T09:51:19 IST" name="Automatiion Practice Site" finished-at="2021-01-18T09:52:21 IST" duration-ms="62364">
+  <suite started-at="2021-01-28T13:03:10 IST" name="Automatiion Practice Site" finished-at="2021-01-28T13:04:03 IST" duration-ms="52421">
     <groups>
     </groups>
-    <test started-at="2021-01-18T09:51:19 IST" name="Automation Practice Site Test" finished-at="2021-01-18T09:52:21 IST" duration-ms="62364">
+    <test started-at="2021-01-28T13:03:10 IST" name="Automation Practice Site Test" finished-at="2021-01-28T13:04:03 IST" duration-ms="52421">
       <class name="com.automation.testcases.HomepageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.testcases.HomepageTest@5b03b9fe]" started-at="2021-01-18T09:51:19 IST" name="setup" finished-at="2021-01-18T09:51:34 IST" duration-ms="15346" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.testcases.HomepageTest@3514a4c0]" started-at="2021-01-28T13:03:10 IST" name="setup" finished-at="2021-01-28T13:03:22 IST" duration-ms="11910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="SuccessfullSubmitNewsletter()[pri:0, instance:com.automation.testcases.HomepageTest@5b03b9fe]" started-at="2021-01-18T09:51:35 IST" name="SuccessfullSubmitNewsletter" finished-at="2021-01-18T09:51:38 IST" duration-ms="3016" status="PASS">
+        <test-method signature="SuccessfullSubmitNewsletter()[pri:0, instance:com.automation.testcases.HomepageTest@3514a4c0]" started-at="2021-01-28T13:03:22 IST" name="SuccessfullSubmitNewsletter" finished-at="2021-01-28T13:03:25 IST" duration-ms="2885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SuccessfullSubmitNewsletter -->
-        <test-method signature="UnSuccessfullSubmitNewsletter()[pri:1, instance:com.automation.testcases.HomepageTest@5b03b9fe]" started-at="2021-01-18T09:51:38 IST" name="UnSuccessfullSubmitNewsletter" finished-at="2021-01-18T09:51:40 IST" duration-ms="2197" status="PASS">
+        <test-method signature="UnSuccessfullSubmitNewsletter()[pri:1, instance:com.automation.testcases.HomepageTest@3514a4c0]" started-at="2021-01-28T13:03:25 IST" name="UnSuccessfullSubmitNewsletter" finished-at="2021-01-28T13:03:28 IST" duration-ms="2804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UnSuccessfullSubmitNewsletter -->
-        <test-method signature="VerifytheLinkText()[pri:1, instance:com.automation.testcases.HomepageTest@5b03b9fe]" started-at="2021-01-18T09:51:40 IST" name="VerifytheLinkText" finished-at="2021-01-18T09:51:40 IST" duration-ms="68" status="PASS">
+        <test-method signature="VerifytheLinkText()[pri:1, instance:com.automation.testcases.HomepageTest@3514a4c0]" started-at="2021-01-28T13:03:28 IST" name="VerifytheLinkText" finished-at="2021-01-28T13:03:28 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifytheLinkText -->
-        <test-method signature="VerifytheLinkTextThree()[pri:1, instance:com.automation.testcases.HomepageTest@5b03b9fe]" started-at="2021-01-18T09:51:40 IST" name="VerifytheLinkTextThree" finished-at="2021-01-18T09:51:40 IST" duration-ms="111" status="PASS">
+        <test-method signature="VerifytheLinkTextThree()[pri:1, instance:com.automation.testcases.HomepageTest@3514a4c0]" started-at="2021-01-28T13:03:28 IST" name="VerifytheLinkTextThree" finished-at="2021-01-28T13:03:28 IST" duration-ms="169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifytheLinkTextThree -->
-        <test-method signature="VerifytheLinkTextTwo()[pri:1, instance:com.automation.testcases.HomepageTest@5b03b9fe]" started-at="2021-01-18T09:51:40 IST" name="VerifytheLinkTextTwo" finished-at="2021-01-18T09:51:40 IST" duration-ms="138" status="PASS">
+        <test-method signature="VerifytheLinkTextTwo()[pri:1, instance:com.automation.testcases.HomepageTest@3514a4c0]" started-at="2021-01-28T13:03:28 IST" name="VerifytheLinkTextTwo" finished-at="2021-01-28T13:03:29 IST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifytheLinkTextTwo -->
-        <test-method signature="VerifythePageTitle()[pri:1, instance:com.automation.testcases.HomepageTest@5b03b9fe]" started-at="2021-01-18T09:51:40 IST" name="VerifythePageTitle" finished-at="2021-01-18T09:51:40 IST" duration-ms="18" status="PASS">
+        <test-method signature="VerifythePageTitle()[pri:1, instance:com.automation.testcases.HomepageTest@3514a4c0]" started-at="2021-01-28T13:03:29 IST" name="VerifythePageTitle" finished-at="2021-01-28T13:03:29 IST" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifythePageTitle -->
-        <test-method signature="EnterSigninPage()[pri:2, instance:com.automation.testcases.HomepageTest@5b03b9fe]" started-at="2021-01-18T09:51:40 IST" name="EnterSigninPage" finished-at="2021-01-18T09:51:48 IST" duration-ms="7702" status="FAIL">
+        <test-method signature="EnterSigninPage()[pri:2, instance:com.automation.testcases.HomepageTest@3514a4c0]" started-at="2021-01-28T13:03:29 IST" name="EnterSigninPage" finished-at="2021-01-28T13:03:38 IST" duration-ms="9315" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Login - y Store] but found [Login - My Store]]]>
@@ -48,7 +48,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.automation.testcases.HomepageTest.EnterSigninPage(HomepageTest.java:79)
+at com.automation.testcases.HomepageTest.EnterSigninPage(HomepageTest.java:91)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,39 +83,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterSigninPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.testcases.HomepageTest@5b03b9fe]" started-at="2021-01-18T09:51:48 IST" name="tearDown" finished-at="2021-01-18T09:51:49 IST" duration-ms="719" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.testcases.HomepageTest@3514a4c0]" started-at="2021-01-28T13:03:38 IST" name="tearDown" finished-at="2021-01-28T13:03:39 IST" duration-ms="1218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automation.testcases.HomepageTest -->
-      <class name="com.automation.testcases.testcases">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.testcases.testcases@37d4349f]" started-at="2021-01-18T09:51:49 IST" name="setup" finished-at="2021-01-18T09:52:01 IST" duration-ms="12706" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="getPagetitle()[pri:0, instance:com.automation.testcases.testcases@37d4349f]" started-at="2021-01-18T09:52:01 IST" name="getPagetitle" finished-at="2021-01-18T09:52:01 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getPagetitle -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.automation.testcases.testcases@37d4349f]" started-at="2021-01-18T09:52:01 IST" name="Teardown" finished-at="2021-01-18T09:52:02 IST" duration-ms="849" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- com.automation.testcases.testcases -->
       <class name="com.automation.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.testcases.LoginPageTest@434a63ab]" started-at="2021-01-18T09:52:02 IST" name="setup" finished-at="2021-01-18T09:52:18 IST" duration-ms="16154" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.testcases.LoginPageTest@212b5695]" started-at="2021-01-28T13:03:39 IST" name="setup" finished-at="2021-01-28T13:03:54 IST" duration-ms="15075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LogontoAccount()[pri:0, instance:com.automation.testcases.LoginPageTest@434a63ab]" started-at="2021-01-18T09:52:18 IST" name="LogontoAccount" finished-at="2021-01-18T09:52:21 IST" duration-ms="2375" status="PASS">
+        <test-method signature="LogontoAccount()[pri:0, instance:com.automation.testcases.LoginPageTest@212b5695]" started-at="2021-01-28T13:03:54 IST" name="LogontoAccount" finished-at="2021-01-28T13:04:02 IST" duration-ms="7338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogontoAccount -->
-        <test-method signature="VerifyLoginPagetitle()[pri:0, instance:com.automation.testcases.LoginPageTest@434a63ab]" started-at="2021-01-18T09:52:21 IST" name="VerifyLoginPagetitle" finished-at="2021-01-18T09:52:21 IST" duration-ms="34" status="PASS">
+        <test-method signature="VerifyLoginPagetitle()[pri:0, instance:com.automation.testcases.LoginPageTest@212b5695]" started-at="2021-01-28T13:04:02 IST" name="VerifyLoginPagetitle" finished-at="2021-01-28T13:04:02 IST" duration-ms="53" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLoginPagetitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.testcases.LoginPageTest@434a63ab]" started-at="2021-01-18T09:52:21 IST" name="tearDown" finished-at="2021-01-18T09:52:21 IST" duration-ms="810" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.testcases.LoginPageTest@212b5695]" started-at="2021-01-28T13:04:02 IST" name="tearDown" finished-at="2021-01-28T13:04:03 IST" duration-ms="1253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

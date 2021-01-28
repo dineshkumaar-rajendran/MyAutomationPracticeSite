@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Automatiion Practice Site">
-
-	<listeners>
-		<listener class-name="com.automationsite.ExtentReportListeners.ExtentReportListenerNg" />
-	</listeners>
-
+<suite name="Automatiion Practice Site" thread-count="3">
 
 	<test name="Automation Practice Site Test">
 		<classes>
 			<class name="com.automation.testcases.HomepageTest" />
-			<class name="com.automation.testcases.testcases" />
 			<class name="com.automation.testcases.LoginPageTest" />
 		</classes>
 	</test> <!-- Test -->

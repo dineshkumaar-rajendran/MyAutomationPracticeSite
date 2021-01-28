@@ -1,6 +1,8 @@
 package com.automation.testcases;
 
 
+import java.net.MalformedURLException;
+
 import org.testng.annotations.*;
 import org.testng.annotations.Test;
 
@@ -13,7 +15,7 @@ public class testcases extends Baseclass {
 	}
 
 	@BeforeClass
-	public void setup() {
+	public void setup() throws MalformedURLException {
 		initializeDriver();
 
 	}

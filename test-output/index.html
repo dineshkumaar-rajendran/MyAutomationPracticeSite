@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -156,11 +156,6 @@
                         <a href="#" panel-name="suite-Automatiion_Practice_Site" title="com.automation.testcases.HomepageTest" class="method navigator-link" hash-for-method="VerifythePageTitle">VerifythePageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Automatiion_Practice_Site" title="com.automation.testcases.testcases" class="method navigator-link" hash-for-method="getPagetitle">getPagetitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Automatiion_Practice_Site -->
                   </li>
                 </ul>
@@ -185,7 +180,7 @@
                   </a> <!-- EnterSigninPage -->
                   <span class="method-name">EnterSigninPage</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [Login - y Store] but found [Login - My Store]
-	at com.automation.testcases.HomepageTest.EnterSigninPage(HomepageTest.java:79)
+	at com.automation.testcases.HomepageTest.EnterSigninPage(HomepageTest.java:91)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
@@ -193,43 +188,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Automatiion_Practice_Site-class-failed -->
-          <div class="suite-Automatiion_Practice_Site-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.automation.testcases.testcases</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getPagetitle">
-                  </a> <!-- getPagetitle -->
-                  <span class="method-name">getPagetitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Automatiion_Practice_Site-class-passed -->
-          <div class="suite-Automatiion_Practice_Site-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.automation.testcases.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LogontoAccount">
-                  </a> <!-- LogontoAccount -->
-                  <span class="method-name">LogontoAccount</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyLoginPagetitle">
-                  </a> <!-- VerifyLoginPagetitle -->
-                  <span class="method-name">VerifyLoginPagetitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Automatiion_Practice_Site-class-passed -->
           <div class="suite-Automatiion_Practice_Site-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -280,6 +238,28 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Automatiion_Practice_Site-class-passed -->
+          <div class="suite-Automatiion_Practice_Site-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogontoAccount">
+                  </a> <!-- LogontoAccount -->
+                  <span class="method-name">LogontoAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginPagetitle">
+                  </a> <!-- VerifyLoginPagetitle -->
+                  <span class="method-name">VerifyLoginPagetitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automatiion_Practice_Site-class-passed -->
         </div> <!-- panel Automatiion_Practice_Site -->
         <div panel-name="test-xml-Automatiion_Practice_Site" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -289,14 +269,10 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Automatiion Practice Site&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.automationsite.ExtentReportListeners.ExtentReportListener&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Automation Practice Site Test&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; name=&quot;Automatiion Practice Site&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;Automation Practice Site Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.automation.testcases.HomepageTest&quot;/&gt;
-      &lt;class name=&quot;com.automation.testcases.testcases&quot;/&gt;
       &lt;class name=&quot;com.automation.testcases.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Automation Practice Site Test --&gt;
@@ -311,7 +287,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Automation Practice Site Test (3 classes)</span>
+                <span class="test-name">Automation Practice Site Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -337,52 +313,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'EnterSigninPage')
 data.setCell(0, 2, 'com.automation.testcases.HomepageTest')
-data.setCell(0, 3, 7702);
+data.setCell(0, 3, 9315);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SuccessfullSubmitNewsletter')
-data.setCell(1, 2, 'com.automation.testcases.HomepageTest')
-data.setCell(1, 3, 3016);
+data.setCell(1, 1, 'LogontoAccount')
+data.setCell(1, 2, 'com.automation.testcases.LoginPageTest')
+data.setCell(1, 3, 7338);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'LogontoAccount')
-data.setCell(2, 2, 'com.automation.testcases.LoginPageTest')
-data.setCell(2, 3, 2375);
+data.setCell(2, 1, 'SuccessfullSubmitNewsletter')
+data.setCell(2, 2, 'com.automation.testcases.HomepageTest')
+data.setCell(2, 3, 2885);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'UnSuccessfullSubmitNewsletter')
 data.setCell(3, 2, 'com.automation.testcases.HomepageTest')
-data.setCell(3, 3, 2197);
+data.setCell(3, 3, 2804);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'VerifytheLinkTextTwo')
+data.setCell(4, 1, 'VerifytheLinkTextThree')
 data.setCell(4, 2, 'com.automation.testcases.HomepageTest')
-data.setCell(4, 3, 138);
+data.setCell(4, 3, 169);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'VerifytheLinkTextThree')
+data.setCell(5, 1, 'VerifytheLinkText')
 data.setCell(5, 2, 'com.automation.testcases.HomepageTest')
-data.setCell(5, 3, 111);
+data.setCell(5, 3, 127);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'VerifytheLinkText')
+data.setCell(6, 1, 'VerifytheLinkTextTwo')
 data.setCell(6, 2, 'com.automation.testcases.HomepageTest')
-data.setCell(6, 3, 68);
+data.setCell(6, 3, 122);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'VerifyLoginPagetitle')
 data.setCell(7, 2, 'com.automation.testcases.LoginPageTest')
-data.setCell(7, 3, 34);
+data.setCell(7, 3, 53);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'VerifythePageTitle')
 data.setCell(8, 2, 'com.automation.testcases.HomepageTest')
-data.setCell(8, 3, 18);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'getPagetitle')
-data.setCell(9, 2, 'com.automation.testcases.testcases')
-data.setCell(9, 3, 13);
+data.setCell(8, 3, 44);
 window.suiteTableData['Automatiion_Practice_Site']= { tableData: data, tableDiv: 'times-div-Automatiion_Practice_Site'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Automatiion_Practice_Site">
               </div> <!-- times-div-Automatiion_Practice_Site -->
             </div> <!-- times-div -->
@@ -415,71 +387,56 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">SuccessfullSubmitNewsletter</span>
-                <span class="method-start">15365 ms</span>
+                <span class="method-start">11930 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UnSuccessfullSubmitNewsletter</span>
-                <span class="method-start">18390 ms</span>
+                <span class="method-start">14827 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifytheLinkText</span>
-                <span class="method-start">20592 ms</span>
+                <span class="method-start">17636 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifytheLinkTextThree</span>
-                <span class="method-start">20663 ms</span>
+                <span class="method-start">17766 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifytheLinkTextTwo</span>
-                <span class="method-start">20776 ms</span>
+                <span class="method-start">17939 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifythePageTitle</span>
-                <span class="method-start">20917 ms</span>
+                <span class="method-start">18064 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">EnterSigninPage</span>
-                <span class="method-start">20938 ms</span>
+                <span class="method-start">18110 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28659 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.testcases.testcases</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">29379 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">getPagetitle</span>
-                <span class="method-start">42085 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">Teardown</span>
-                <span class="method-start">42101 ms</span>
+                <span class="method-start">27438 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.testcases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">42951 ms</span>
+                <span class="method-start">28657 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">LogontoAccount</span>
-                <span class="method-start">59105 ms</span>
+                <span class="method-start">43733 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyLoginPagetitle</span>
-                <span class="method-start">61487 ms</span>
+                <span class="method-start">51075 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">61523 ms</span>
+                <span class="method-start">51130 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
