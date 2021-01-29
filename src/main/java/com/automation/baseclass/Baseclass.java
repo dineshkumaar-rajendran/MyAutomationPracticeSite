@@ -21,15 +21,16 @@ import utility.ExtentReportDemo;
 import utility.MyEventListener;
 
 public class Baseclass {
-	
-	public static WebDriver driver;
+
+	private WebDriver driver;
+	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 	public static Properties prop;
 	public static EventFiringWebDriver e_driver;
 	public static MyEventListener eventListener;
 
 	public Baseclass() {
 		prop = new Properties();
-		
+
 		try {
 			FileInputStream fis = new FileInputStream("./src/main/java/config/configuration.properties");
 			prop.load(fis);
@@ -43,38 +44,47 @@ public class Baseclass {
 
 	}
 
-	public static void initializeDriver() throws MalformedURLException {
+	public static WebDriver initializeDriver() throws Exception {
 		String browserName = prop.getProperty("browser");
-		String NodeT = " http://192.168.8.100:4444/wd/hub";
 		
 		if (browserName.contains("chrome")) {
-			
-			DesiredCapabilities dr=null;
-			dr=DesiredCapabilities.chrome();
-	        dr.setBrowserName("chrome");
-	        dr.setPlatform(Platform.WINDOWS);
 
-	     driver=new RemoteWebDriver(new    URL("http://localhost:4444/wd/hub"), dr);
+			DesiredCapabilities dr = null;
+			dr = DesiredCapabilities.chrome();
+			dr.setBrowserName("chrome");
+			dr.setPlatform(Platform.WINDOWS);
+
+			tlDriver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dr));
+
+			// driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dr));
 
 			// WebDriverManager.chromedriver().setup(); driver =new ChromeDriver();
-			 
-		
+
 		} else if (browserName.contains("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
-			driver=new FirefoxDriver();
+			// driver=new FirefoxDriver();
 		} else {
 			System.out.println("Enter the Valid browser name");
 		}
-		
+
 		/*
 		 * e_driver = new EventFiringWebDriver(driver); eventListener = new
 		 * MyEventListener(); e_driver.register(eventListener); driver = e_driver;
 		 */
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
-		driver.get(prop.getProperty("url"));
-		 ExtentReportDemo.initializeReports();
+		getDriver().manage().window().maximize();
+		getDriver().manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+
+	//	getDriver().get(prop.getProperty("url"));
+		ExtentReportDemo.initializeReports();
+		getDriver().get(prop.getProperty("url"));
+		return getDriver();
+	}
+
+	public static synchronized WebDriver getDriver() {// if someone calls the get driver method then it will return the
+														// threadlocal
+		// instance , where we have initialized chrome driver
+		return tlDriver.get();
+
 	}
 
 }

@@ -6,12 +6,11 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
-import com.automation.baseclass.Baseclass;
+public class TakeScreenShot {
 
-public class TakeScreenShot extends Baseclass {
-
-	
+	private static WebDriver driver;
 	public static void TakeScreenshotForFailedTestCase() {
 		String CurrentDirect = System.getProperty("user.dir");
 		File SourcePath = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

@@ -1,5 +1,6 @@
 package com.automationsite.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -7,11 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.automation.baseclass.Baseclass;
 
-import utility.ExtentReportDemo;
+public class LoginPage {
+	
+	private WebDriver driver;
 
-public class LoginPage extends Baseclass {
-	public LoginPage() {
+	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
+
 	}
 
 	@FindBy(id = "email")
@@ -37,23 +40,23 @@ public class LoginPage extends Baseclass {
 
 	public MyAccountPage LogintoPage(String username, String pasd) {
 		Emailid.sendKeys(username);
-		//ExtentReportDemo.CreateTest("Entered the New Email Id");
+		// ExtentReportDemo.CreateTest("Entered the New Email Id");
 		password.sendKeys(pasd);
-		//ExtentReportDemo.CreateTest("Entered the Password");
+		// ExtentReportDemo.CreateTest("Entered the Password");
 		Signinbtn.click();
-	//	ExtentReportDemo.CreateTest("Clicked the Signin button");
+		// ExtentReportDemo.CreateTest("Clicked the Signin button");
 		return new MyAccountPage();
 	}
 
 	public String VerifyLoginPagetitle() {
-	//ExtentReportDemo.CreateTest("Recieved the Login Page Title");
-	return	driver.getTitle();
+		// ExtentReportDemo.CreateTest("Recieved the Login Page Title");
+		return Baseclass.getDriver().getTitle();
 	}
-	
+
 	public void createAccount(String NewEmail) {
 		CreateAccountEmail.sendKeys(NewEmail);
-		//ExtentReportDemo.CreateTest("Entered the New Email Id");
+		// ExtentReportDemo.CreateTest("Entered the New Email Id");
 		CreateanAccount.click();
-		//ExtentReportDemo.CreateTest("Click Created Account button");
+		// ExtentReportDemo.CreateTest("Click Created Account button");
 	}
 }

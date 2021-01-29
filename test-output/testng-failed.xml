@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" name="Failed suite [Automatiion Practice Site]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" name="Automation Practice Site Test(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [Automatiion Practice Site]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Automation Practice Site Test(failed)">
     <classes>
+      <class name="com.automation.testcases.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="VerifyLoginPagetitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automation.testcases.LoginPageTest -->
       <class name="com.automation.testcases.HomepageTest">
         <methods>
+          <include name="VerifytheLinkTextTwo"/>
+          <include name="VerifytheLinkText"/>
+          <include name="UnSuccessfullSubmitNewsletter"/>
           <include name="tearDown"/>
+          <include name="VerifythePageTitle"/>
           <include name="setup"/>
           <include name="EnterSigninPage"/>
+          <include name="VerifytheLinkTextThree"/>
         </methods>
       </class> <!-- com.automation.testcases.HomepageTest -->
     </classes>

@@ -1,37 +1,32 @@
 package com.automation.testcases;
 
+import java.net.MalformedURLException;
+
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.automation.baseclass.Baseclass;
 import com.automationsite.pages.Homepage;
 
-import utility.ExtentReportDemo;
-
-import java.net.MalformedURLException;
-import java.util.Properties;
-
-import org.testng.Assert;
-
 public class HomepageTest extends Baseclass {
 
 	Homepage homepage;
 	
-	public HomepageTest() {
-		super();
-	}
-
+	
 	@BeforeClass
-	public void setup() throws MalformedURLException {
-		initializeDriver();
-		homepage = new Homepage();
+	public void setup() throws Exception {
+		Baseclass.initializeDriver();
+		homepage = new Homepage(Baseclass.getDriver());
 	}
 
 	@Test(priority=1)
-	public void VerifythePageTitle() {
+	public void VerifythePageTitle()  throws Exception {
+		
+		Thread.sleep(2000);
 		//ExtentReportDemo.CreateTest("VerifythePageTitle");
 		String PageTitle = homepage.getPageTitle();
 		Assert.assertEquals(PageTitle, "My Store");
@@ -40,6 +35,7 @@ public class HomepageTest extends Baseclass {
 	@Test(priority=1)
 	public void VerifytheLinkText() {
 		//ExtentReportDemo.CreateTest("VerifytheLinkText");
+		//getDriver().get(prop.getProperty("url"));
 		String LinkOneTxt = homepage.getDressTitle();
 		Assert.assertEquals(LinkOneTxt, "DRESSES");
 
@@ -48,6 +44,7 @@ public class HomepageTest extends Baseclass {
 	@Test(priority=1)
 	public void VerifytheLinkTextTwo() {
 		//ExtentReportDemo.CreateTest("VerifytheLinkTextTwo");
+		//getDriver().get(prop.getProperty("url"));
 		String LinkTwoTxt = homepage.getWomenTitle();
 		Assert.assertEquals(LinkTwoTxt, "WOMEN");
 	}
@@ -55,29 +52,34 @@ public class HomepageTest extends Baseclass {
 	@Test(priority=1)
 	public void VerifytheLinkTextThree() {
 		//ExtentReportDemo.CreateTest("VerifytheLinkTextThree");
+		//getDriver().get(prop.getProperty("url"));
 		String LinkThreeTxt = homepage.getTshirtsTitle();
 		Assert.assertEquals(LinkThreeTxt, "T-SHIRTS");
 	}
 	
 	@Test(priority=0)
-	public void SuccessfullSubmitNewsletter() {
+	public void SuccessfullSubmitNewsletter() throws InterruptedException {
 		//ExtentReportDemo.CreateTest("SuccessfullSubmitNewsletter");
+		getDriver().get(prop.getProperty("url"));
 		homepage.EnterEmail(prop.getProperty("email"));
 		homepage.SubmitNewsLetter();
 		String SuccessMessage = homepage.GetSuccessheader();
 		Assert.assertEquals(SuccessMessage,"Newsletter : You have successfully subscribed to this newsletter.");
 	}
 	
-	@Test(priority=1)
-	public void UnSuccessfullSubmitNewsletter() {
+	@Test(priority=2)
+	public void UnSuccessfullSubmitNewsletter() throws InterruptedException {
 		//ExtentReportDemo.CreateTest("UnSuccessfullSubmitNewsletter");
+		//getDriver().get(prop.getProperty("url"));
 		homepage.EnterEmail(prop.getProperty("email"));
 		homepage.SubmitNewsLetter(); 
+		Thread.sleep(5000);
+		
 		String FailureMessage = homepage.GetFailureheader();
 		Assert.assertEquals(FailureMessage,"Newsletter : This email address is already registered.");
 	}
 	
-	@Test(priority=2)
+	@Test(priority=3)
 	public void EnterSigninPage() {
 		try {
 			Thread.sleep(5000);
@@ -86,14 +88,15 @@ public class HomepageTest extends Baseclass {
 			e.printStackTrace();
 		}
 		//ExtentReportDemo.CreateTest("EnterSigninPage");
+		//getDriver().get(prop.getProperty("url"));
 		homepage.NavigatetoSignPage();
 		String Pagetitle = homepage.getPageTitle();
-		Assert.assertEquals(Pagetitle,"Login - y Store");
+		Assert.assertEquals(Pagetitle,"Login - My Store");
 	}
 
 	@AfterClass
 	public void tearDown() {
-		driver.quit();
+		Baseclass.getDriver().close();
 		//ExtentReportDemo.flushReports(); 
 	}
 }
